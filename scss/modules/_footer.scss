@@ -1,0 +1,39 @@
+.footer {
+background: url('../images/bg-footer.jpg') no-repeat top center;
+background-size: cover;
+    position: relative;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        max-width: 770px;
+        margin: 0 auto;
+        top: -200px;
+    }
+
+    &__box {
+        display: flex;
+        position: relative;
+        max-width: 770px;
+        margin: 0 auto;
+        top: -200px;
+        color: #fff;
+        
+    }
+
+    &__text {
+        border-right: 1px solid #fff;
+        padding: 0 20px 0 0;
+    
+        &:last-child {
+            border: none;
+            padding-left: 20px;
+        }
+    }
+
+    &__logo {
+        font-size: 60px;
+    }
+
+} 

@@ -1,0 +1,39 @@
+.social {
+
+    &__list {
+        display: flex;
+        padding: 30px;
+    }
+
+    &__item {
+        @include size(40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 1px solid rgba(255,255,255,.4);
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: all .5s;
+
+        &:hover {
+            background-color: #fff; 
+        }
+
+        &:hover .social__link {
+            color:blueviolet;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        transition: all .5s;
+    }
+
+    &__icon {
+
+    }
+}

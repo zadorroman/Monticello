@@ -1,0 +1,36 @@
+.menu {
+
+    &__list {
+        display: flex;
+
+    }
+
+    &__item {
+        margin: 0 50px;
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        font-size: 14px;
+
+
+        &:hover::before {
+                background-color: #fff ;
+        }
+
+        &::before {
+            @include size(9px);
+            @include pos($t:50%, $l:-14px);
+
+            content: '';
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all .3s;
+            transform: translateY(-50%); 
+        }
+    }
+}

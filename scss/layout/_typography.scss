@@ -1,0 +1,31 @@
+.title {
+    position: relative;
+    text-transform: uppercase;
+    color: $dbl;
+    font: 700 44px/22px $got;
+
+    &::before {
+        @include size(100px,1px);
+        @include pos($t:-30px, $l:50%);
+
+        content: '';
+        background: $dbl;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    &--box {
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &--white {
+        color: #fff;
+
+        &::before {
+            background: #fff;
+        }
+    }
+}

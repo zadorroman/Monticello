@@ -1,0 +1,93 @@
+.gallery {
+
+
+    &__title {
+        text-align: center;
+        margin-top: 180px;
+        margin-bottom: 100px;
+    }
+
+    &__btn {
+        text-align: center;
+
+    }
+
+    &__img {
+        height: 100%;
+        min-width: 100%;
+        max-width: 285px;
+        transition: all .3s;
+        display: block;
+
+        &--first {
+            max-width: 580px;
+        }
+    } 
+
+    &__wrap {
+        display: flex;
+
+        &--more {
+            transition: all .5s;
+            flex-direction: row;
+            margin: 10px 0;
+        }
+    }
+
+    &__pic {
+        display: flex;
+
+        position: relative;
+
+        &::before {
+            content: '';
+            @include size(10%);
+            background: url('../images/360.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+            @include pos($t:50%, $l:50%);
+            transition: all .3s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__sec-pic {
+        display: flex;
+        flex-direction: column; 
+        overflow: hidden;
+        position: relative;
+
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__min-pic:first-child {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    &__min-pic {
+        &::before {
+            content: '';
+            @include size(10%);
+            background: url('../images/360.png') no-repeat;
+            background-size: cover;
+            opacity: 0;
+            @include pos($t:50%, $l:50%);
+            transition: all .3s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+}

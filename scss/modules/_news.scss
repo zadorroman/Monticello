@@ -1,0 +1,19 @@
+.news {
+    background: url('../images/bg-news.jpg') no-repeat top center;
+    background-size: cover;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+
+    &__title {
+        margin-top: 180px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    &__slider {
+        margin-bottom: 140px;
+    }
+
+
+} 

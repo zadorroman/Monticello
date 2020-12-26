@@ -1,0 +1,64 @@
+.header {
+    height: 100vh;
+    background: url('../images/bg-header.jpg') no-repeat top center;
+    background-size: cover;
+    padding-top: 1px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-items: center;
+        margin-bottom: 260px;
+    }
+    &__logo {
+        font-size: 55px;
+    }
+
+    &__title {
+        font-size: 80px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4px;
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 5.4px;
+        margin-bottom: 230px;
+    }
+
+
+    &__scroll {
+        @include size(40px);
+        border: 1px solid rgba(255,255,255,.4);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(45deg);
+        margin: -60px auto;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #fff; 
+        }
+
+    }
+    &__link {
+        border: solid #fff;;
+        border-width: 0 1px 1px 0;
+        display: flex;
+        @include size(7px);
+        transform: translateX(-10%);
+        text-decoration: none;
+    }
+
+
+} 

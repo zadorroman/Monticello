@@ -1,0 +1,51 @@
+.btn {
+
+    border: 1px solid $dbl;
+    text-align: center;
+    max-width: 190px;
+    transition: all .3s;
+    width: 100%;
+
+        &:hover {
+        background-color: $dbl;
+
+    }
+            
+
+    &__link {
+        padding: 20px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 400 14px/22px $got;
+        color: $dbl;
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &--submit {
+        max-width: 140px;
+        padding: 20px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 400 14px/22px $got;
+        color: $dbl;
+        display: flex;
+        justify-content: flex-end;
+        white-space: nowrap;
+        cursor: pointer;
+        margin-left: 170px;
+        background: transparent;
+
+        &:hover {
+            color: #fff;
+        }
+        
+        
+    }
+}

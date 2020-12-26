@@ -1,0 +1,46 @@
+.fix-menu {
+    @include pos(fixed, $r: 20px, $t: 50%);
+    transform: translateY(-50%);
+    z-index: 99999999999999;
+    
+    &__item {
+        margin: 10px 0;
+    }
+
+    &__link {
+        @include size(9px);
+        text-decoration: none;
+        background: transparent;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid #fff;
+        white-space: nowrap;
+
+        &:hover,
+        &.fix-menu__active {
+            background: #fff;
+
+            .fix-menu__text {
+                opacity: 1;
+                visibility: visible;
+                margin-right: 20px; 
+            }
+        }
+
+        &.fix-menu__active {
+            color: #fff;
+        }
+    }
+
+    &__text {
+        float: right;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        font-size: 10px;
+        margin-top: -1px;
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
